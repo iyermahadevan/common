@@ -8,9 +8,19 @@
 
 task main()
 {
-	// Run a motor for 1 second
-	writeDebugStreamLine("Start");
+	// Run a motor forward for 1 second
+	writeDebugStreamLine("Start Forward");
 	// motor[motorD] = 100;
 	// wait1Msec(1000);
-	writeDebugStreamLine("Done");
+	writeDebugStreamLine("Done Forward");
+
+	// Wait for 2 seconds
+	wait1Msec(2000);
+
+	// Run motor in reverse for 1 second
+	writeDebugStreamLine("Start Reverse");
+	// motor[motorD] = 100;
+	// wait1Msec(1000);
+	writeDebugStreamLine("Done Reverse");
+
 }
